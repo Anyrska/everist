@@ -57,6 +57,10 @@ header::before {
     }
 }
 
+.logo {
+    margin: 10px 0px 10px 0px;
+}
+
 nav {
     align-self: center;
     z-index: 2;
