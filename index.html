@@ -54,9 +54,7 @@
         <div class="header-center__descr">
             Find Your Shower<br>Routine (& Receive<br>a Free Gift!).
         </div>
-        <div class="header-center__btn">
-            <a class="header-center__btn_link" href="#">Shop Now</a>
-        </div>
+        <button class="header_btn modal-btn-open" type="button">Shop Now</button>
     </div>
   </header>   
 
@@ -405,12 +403,54 @@
       
     </script>
   </footer>
+
+  <!-- Модальне вікно -->
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">X</button>
+      <h2 class="modal-title">Здійснити замовлення</h2>
+      <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+      <form name="contact-form" autocomplete="off">
+        <div class="form-field">
+          <label for="user-name" class="form-label visually-hidden">Ім'я</label>
+          <input type="text" class="form-input" placeholder="Ім'я" name="user-name" id="user-name" required>
+        </div>
+        <div class="form-field">
+          <label for="user-tel" class="form-label visually-hidden">Телефон</label>
+          <input type="text" class="form-input" placeholder="Телефон" name="user-tel" id="user-tel" required>
+        </div>
+        <div class="form-field">
+          <label for="user-mail" class="form-label visually-hidden">Електронна пошта</label>
+          <input type="text" class="form-input" placeholder="Електронна пошта" name="user-mail" id="user-mail" required>
+        </div>
+
+        <div class="checkbox">
+          <input 
+            class="checkbox-input visually-hidden" 
+            id="terms-conditions" 
+            name="terms-conditions" 
+            type="checkbox">
+
+          <label 
+          class="checkbox-label" 
+          for="terms-conditions">Я згоден на обробку персональних даних</label>
+        </div>
+        
+        <button class="form-button button">Замовити дзвінок</button>
+        <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a href="#" class="form-terms-link">з політикою конфіденційності</a></p>
+      
+      </form>
+    </div>
+  </div>
+
   <!-- Підключаємо JQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- Підключаємо слайдер Slick -->
   <script src="js/slick.min.js"></script>
   <!-- Підключаємо файл скриптів -->
   <script src="js/script.js"></script>
+  <!-- Підключаємо файл закр/відкр модального вікна -->
+  <script src="js/modal.js"></script>
 
   <!-- Скрипт для нормальної роботи бургера -->
   <script>
